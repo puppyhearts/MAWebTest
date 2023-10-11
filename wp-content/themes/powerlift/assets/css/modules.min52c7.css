@@ -17433,7 +17433,7 @@ hr+h2:before {
 }
 
 .mkdf-page-header .mkdf-logo-area .mkdf-logo-wrapper a {
-    max-height: 70px
+    max-height: 90px
 }
 
 .mkdf-page-header .mkdf-menu-area {
@@ -17600,9 +17600,11 @@ hr+h2:before {
     position: relative;
     display: inline-block;
     vertical-align: top;
+    max-width: 100%
 }
 
 .mkdf-logo-wrapper a img {
+    height: 100%;
     width: auto;
     -webkit-transition: opacity .2s ease;
     -o-transition: opacity .2s ease;
@@ -19471,6 +19473,7 @@ nav.mkdf-fullscreen-menu>ul>li.mkdf-active-item>a>span:after {
 .mkdf-header-vertical .mkdf-logo-wrapper {
     position: relative;
     display: inline-block;
+    width: 100%;
     vertical-align: middle;
     z-index: 100
 }
@@ -19478,11 +19481,13 @@ nav.mkdf-fullscreen-menu>ul>li.mkdf-active-item>a>span:after {
 .mkdf-header-vertical .mkdf-logo-wrapper a {
     display: block;
     position: relative;
+    height: 100%
 }
 
 .mkdf-header-vertical .mkdf-logo-wrapper img {
     display: block;
     height: auto;
+    max-height: 100%;
     -webkit-transition: opacity .3s ease;
     -o-transition: opacity .3s ease;
     transition: opacity .3s ease
