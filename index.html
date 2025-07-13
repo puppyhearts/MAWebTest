@@ -813,6 +813,22 @@ Find the Class That Suits You </h1>
       background: #fff;
       border: 1px solid #e0e0e0;
     }
+	/* 
+	overlay-event: 
+		- top: 25%  → starts at 18:15  
+		- height:150% → ends at 19:45 
+	*/
+	.cell-with-fifoverlay .overlay-event {
+	position: absolute;
+	top: 25%;
+	height: 150%;
+	left: 0;
+	right: 0;
+	z-index: 5;
+	/* optional, match your normal .event styling */
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	}
   </style>
 	<div class='tt_wrapper  '>
 		<link rel="stylesheet" type="text/css"
@@ -928,13 +944,13 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="wrestling">Kid's Wrestling (5-9)</a>
+										title="wrestling">Kid's Wrestling (Ages 5-9)</a>
 									<div class='before_hour_text'>Anthony Nguyen</div>
 								</div>
 								<div class="tt_tooltip_text">
 									<div class="tt_tooltip_content"><a class="event_header"
 										href="facilities/bjj.html"
-											title="wrestling">Kid's Wrestling (5-9)</a>Wrestling</div>
+											title="wrestling">Kid's Wrestling (Ages 5-9)</a>Wrestling</div>
 									<div class="tt_tooltip_arrow"></div>
 								</div>
 							</td>
@@ -984,13 +1000,13 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="wrestling">Kid's Wrestling (10-14)</a>
+										title="wrestling">Kid's Wrestling (Ages 10-14)</a>
 									<div class='before_hour_text'>Anthony Nguyen</div>
 								</div>
 								<div class="tt_tooltip_text">
 									<div class="tt_tooltip_content"><a class="event_header"
 										href="facilities/bjj.html"
-											title="wrestling">Kid's Wrestling (10-14)</a>Wrestling</div>
+											title="wrestling">Kid's Wrestling (Ages 10-14)</a>Wrestling</div>
 									<div class="tt_tooltip_arrow"></div>
 								</div>
 							</td>
@@ -1147,7 +1163,7 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="Kids">Kids' (5-9) Brazilian Jiu Jitsu</a>
+										title="Kids">Kids' (Ages 5-9) Brazilian Jiu Jitsu</a>
 									<div class='before_hour_text'>Uriel Lopez</div>
 								</div>
 								<div class="tt_tooltip_text">
@@ -1160,7 +1176,7 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="Kids">Kids' (5-9) Kickboxing</a>
+										title="Kids">Kids' (Ages 5-9) Kickboxing</a>
 									<div class='before_hour_text'>Uriel Lopez</div>
 								</div>
 								<div class="tt_tooltip_text">
@@ -1173,7 +1189,7 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="Kids">Kids' (5-9) Brazilian Jiu Jitsu</a>
+										title="Kids">Kids' (Ages 5-9) Brazilian Jiu Jitsu</a>
 									<div class='before_hour_text'>Uriel Lopez</div>
 								</div>
 								<div class="tt_tooltip_text">
@@ -1186,7 +1202,7 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="Kids">Kids' (5-9) Kickboxing</a>
+										title="Kids">Kids' (Ages 5-9) Kickboxing</a>
 									<div class='before_hour_text'>Uriel Lopez</div>
 								</div>
 								<div class="tt_tooltip_text">
@@ -1199,7 +1215,7 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="Kids">Kids' (5-9) Brazilian Jiu Jitsu</a>
+										title="Kids">Kids' (Ages 5-9) Brazilian Jiu Jitsu</a>
 									<div class='before_hour_text'>Uriel Lopez</div>
 								</div>
 								<div class="tt_tooltip_text">
@@ -1219,7 +1235,7 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="Kids">Kids' (10-14) Brazilian Jiu Jitsu</a>
+										title="Kids">Kids' (Ages 10-14) Brazilian Jiu Jitsu</a>
 									<div class='before_hour_text'>Uriel Lopez</div>
 								</div>
 								<div class="tt_tooltip_text">
@@ -1232,7 +1248,7 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="Kids">Kids' (10-14) Kickboxing</a>
+										title="Kids">Kids' (Ages 10-14) Kickboxing</a>
 									<div class='before_hour_text'>Uriel Lopez</div>
 								</div>
 								<div class="tt_tooltip_text">
@@ -1245,7 +1261,7 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="Kids">Kids' (10-14) Brazilian Jiu Jitsu</a>
+										title="Kids">Kids' (Ages 10-14) Brazilian Jiu Jitsu</a>
 									<div class='before_hour_text'>Uriel Lopez</div>
 								</div>
 								<div class="tt_tooltip_text">
@@ -1258,7 +1274,7 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="Kids">Kids' (10-14) Kickboxing</a>
+										title="Kids">Kids' (Ages 10-14) Kickboxing</a>
 									<div class='before_hour_text'>Uriel Lopez</div>
 								</div>
 								<div class="tt_tooltip_text">
@@ -1271,7 +1287,7 @@ Find the Class That Suits You </h1>
 							<td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
-										title="Kids">Kids' (10-14) Brazilian Jiu Jitsu</a>
+										title="Kids">Kids' (Ages 10-14) Brazilian Jiu Jitsu</a>
 									<div class='before_hour_text'>Uriel Lopez</div>
 								</div>
 								<div class="tt_tooltip_text">
@@ -1281,6 +1297,90 @@ Find the Class That Suits You </h1>
 									<div class="tt_tooltip_arrow"></div>
 								</div>
 							</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="row_9">
+							<td class="tt_hours_column">
+								18:00 - 19:00
+							</td>
+							<td class="event tt_tooltip tt_single_event" rowspan="1">
+								<div class="event_container id-2063"><a class="event_header"
+									href="facilities/bjj.html"
+										title="nogi">Nogi Grappling</a>
+									<div class='before_hour_text'>Uriel Lopez</div>
+								</div>
+								<div class="tt_tooltip_text">
+									<div class="tt_tooltip_content"><a class="event_header"
+										href="facilities/bjj.html"
+											title="nogi">Nogi</a>Nogi</div>
+									<div class="tt_tooltip_arrow"></div>
+								</div>
+							</td>
+							<td class="event tt_tooltip tt_single_event" rowspan="1">
+								<div class="event_container id-2063"><a class="event_header"
+									href="facilities/bjj.html"
+										title="BJJ">Brazilian Jiu Jitsu</a>
+									<div class='before_hour_text'>Mike Hansen</div>
+								</div>
+								<div class="tt_tooltip_text">
+									<div class="tt_tooltip_content"><a class="event_header"
+										href="facilities/bjj.html"
+											title="BJJ">Brazilian Jiu Jitsu</a>BJJ</div>
+									<div class="tt_tooltip_arrow"></div>
+								</div>
+							</td>
+							<td class="event tt_tooltip tt_single_event" rowspan="1">
+								<div class="event_container id-2063"><a class="event_header"
+									href="facilities/bjj.html"
+										title="nogi">Nogi Grappling</a>
+									<div class='before_hour_text'>Uriel Lopez</div>
+								</div>
+								<div class="tt_tooltip_text">
+									<div class="tt_tooltip_content"><a class="event_header"
+										href="facilities/bjj.html"
+											title="nogi">Nogi</a>Nogi</div>
+									<div class="tt_tooltip_arrow"></div>
+								</div>
+							</td>
+							<td class="event tt_tooltip tt_single_event" rowspan="1">
+								<div class="event_container id-2063"><a class="event_header"
+									href="facilities/bjj.html"
+										title="BJJ">Brazilian Jiu Jitsu</a>
+									<div class='before_hour_text'>Mike Hansen</div>
+								</div>
+								<div class="tt_tooltip_text">
+									<div class="tt_tooltip_content"><a class="event_header"
+										href="facilities/bjj.html"
+											title="BJJ">Brazilian Jiu Jitsu</a>BJJ</div>
+									<div class="tt_tooltip_arrow"></div>
+								</div>
+							</td>
+							<td class="event tt_tooltip tt_single_event" rowspan="1">
+								<div class="event_container id-2063"><a class="event_header"
+									href="facilities/bjj.html"
+										title="nogi">Nogi Grappling</a>
+									<div class='before_hour_text'>Uriel Lopez</div>
+								</div>
+								<div class="tt_tooltip_text">
+									<div class="tt_tooltip_content"><a class="event_header"
+										href="facilities/bjj.html"
+											title="nogi">Nogi</a>Nogi</div>
+									<div class="tt_tooltip_arrow"></div>
+								</div>
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="row_10 row_gray" style="background: #f6f6f6 !important;">
+							<td class="tt_hours_column">
+								19:00 - 20:00
+							</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 							<td></td>
 							<td></td>
 						</tr>
