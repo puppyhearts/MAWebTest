@@ -795,6 +795,25 @@ Find the Class That Suits You </h1>
 <div class="elementor-element elementor-element-b93fd6d elementor-widget elementor-widget-shortcode" data-id="b93fd6d" data-element_type="widget" data-widget_type="shortcode.default">
 <div class="elementor-widget-container">
 <div class="elementor-shortcode">
+  <!-- 1) Embed your custom CSS here -->
+  <style>
+    /* make the <td> a positioning context */
+    .cell-with-overlay {
+      position: relative;
+    }
+    /* overlayed event: starts halfway down, covers full cell height */
+    .cell-with-overlay .overlay-event {
+      position: absolute;
+      top: 50%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      /* optional: match your normal .event styling */
+      background: #fff;
+      border: 1px solid #e0e0e0;
+    }
+  </style>
 	<div class='tt_wrapper  '>
 		<link rel="stylesheet" type="text/css"
 			href="http://fonts.googleapis.com/css?family=Montserrat:regular&amp;subset=">
@@ -919,7 +938,27 @@ Find the Class That Suits You </h1>
 									<div class="tt_tooltip_arrow"></div>
 								</div>
 							</td>
-							<td class="event tt_tooltip tt_single_event" rowspan="1">
+							<td class="cell-with-overlay">
+								<!--
+									This div sits halfway down the cell (top:50%)
+									and runs the full height, so visually it covers
+									09:30–10:30 inside the 09:00–10:00 row.
+								-->
+								<div class="overlay-event event tt_tooltip tt_single_event bjj">
+									<div class="event_container id-2063"><a class="event_header"
+										href="facilities/bjj.html"
+											title="BJJ">Women's Only BJJ</a>
+										<div class='before_hour_text'>Manuela Viera Ribiero</div>
+									</div>
+									<div class="tt_tooltip_text">
+										<div class="tt_tooltip_content"><a class="event_header"
+											href="facilities/bjj.html"
+												title="BJJ">Women's Gi</a>9:30 - 10:30</div>
+										<div class="tt_tooltip_arrow"></div>
+									</div>
+								</div>
+							</td>
+							<!--td class="event tt_tooltip tt_single_event" rowspan="1">
 								<div class="event_container id-2063"><a class="event_header"
 									href="facilities/bjj.html"
 										title="BJJ">Women's BJJ Class</a>
@@ -931,7 +970,7 @@ Find the Class That Suits You </h1>
 											title="BJJ">Women's Gi</a>BJJ</div>
 									<div class="tt_tooltip_arrow"></div>
 								</div>
-							</td>
+							</td-->
 						</tr>
 						<tr class="row_5">
 							<td class="tt_hours_column">
