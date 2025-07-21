@@ -823,25 +823,27 @@
 				}
 			  </style>
 			  <script>
-				const sections = document.querySelectorAll("section");
-				const navLinks = document.querySelectorAll(".nav-link");
+				document.addEventListener("DOMContentLoaded", function () {
+				  const sections = document.querySelectorAll("section, div[id]"); // covers divs too
+				  const navLinks = document.querySelectorAll(".nav-link");
 			  
-				window.addEventListener("scroll", () => {
-				  let current = "";
+				  window.addEventListener("scroll", () => {
+					let current = "";
 			  
-				  sections.forEach((section) => {
-					const sectionTop = section.offsetTop;
-					const sectionHeight = section.offsetHeight;
-					if (scrollY >= sectionTop - 100) {
-					  current = section.getAttribute("id");
-					}
-				  });
+					sections.forEach((section) => {
+					  const sectionTop = section.offsetTop;
+					  const sectionHeight = section.offsetHeight;
+					  if (scrollY >= sectionTop - 100) {
+						current = section.getAttribute("id");
+					  }
+					});
 			  
-				  navLinks.forEach((link) => {
-					link.classList.remove("active");
-					if (link.getAttribute("href") === "#" + current) {
-					  link.classList.add("active");
-					}
+					navLinks.forEach((link) => {
+					  link.classList.remove("active");
+					  if (link.getAttribute("href") === "#" + current) {
+						link.classList.add("active");
+					  }
+					});
 				  });
 				});
 			  </script>
