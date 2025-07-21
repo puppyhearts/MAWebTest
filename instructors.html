@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
+<style>
+	/* 1. Adjust padding for better alignment */
+	.mkdf-eh-custom-1649 {
+	  padding: 30px 5% 30px 5% !important; /* top, right, bottom, left */
+	}
+  
+	/* 2. Normalize spacing across all sections */
+	.mkdf-row-grid-section {
+	  margin-bottom: 0 !important;
+	  padding-bottom: 0 !important;
+	}
+  
+	/* 3. Remove unnecessary height spacing */
+	.vc_empty_space {
+	  height: 20px !important; /* reduce from 38px */
+	}
+  
+	/* 4. Ensure consistent box sizing */
+	.mkdf-eh-item-content {
+	  box-sizing: border-box;
+	}
+  
+	/* 5. Optional: set max-width for readability */
+	.mkdf-section-title-holder {
+	  max-width: 600px;
+	}
+  </style>
+
 <head>
 	<!-- Google Tag Manager for WordPress by gtm4wp.com -->
 	<script data-cfasync="false" data-pagespeed-no-defer>
@@ -897,7 +925,7 @@
 						<nav class="mkdf-vertical-menu mkdf-vertical-dropdown-below nav-menu">
 							<ul id="menu-left-menu" class="">
 								<li id="nav-menu-item-16"
-									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children has_sub narrow">
+									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children mkdf-active-item has_sub narrow">
 									<a href="#" class=" nav-link"><span class="item_outer"><span
 												class="item_text">Mike Hansen</span><i
 												class="mkdf-menu-arrow fa fa-angle-down"></i></span></a>
@@ -1607,40 +1635,10 @@
 										</div>
 										
 										<div class="mkdf-row-grid-section-wrapper ">
-											<section id = "Uriel">
+											<section id="Uriel">
 											<div class="mkdf-row-grid-section">
 												<div class="vc_row wpb_row vc_row-fluid vc_custom_1560865256118">
-													<div
-														class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12">
-														<div class="vc_column-inner">
-															<div class="wpb_wrapper">
-																<div class="mkdf-video-button-holder  mkdf-vb-has-img">
-																	<div class="mkdf-video-button-image">
-																		<img width="1024" height="733"
-																			src="https://powerlift.qodeinteractive.com/wp-content/uploads/2019/06/h2-video-button.jpg"
-																			class="attachment-full size-full" alt="m"																			sizes="(max-width: 1024px) 100vw, 1024px"
-																			loading="eager" />
-																	</div>
-																	<a class="mkdf-video-button-play"
-																		style="color: #ffffff;font-size: 75px"
-																		href="https://vimeo.com/257366224?iframe=true"
-																		data-rel="prettyPhoto[video_button_pretty_photo_324]">
-																		<span class="mkdf-video-button-play-inner">
-																			<svg version="1.1" x="0px" y="0px"
-																				width="75px" height="75px"
-																				viewBox="0 0 75 75"
-																				style="enable-background:new 0 0 75 75;"
-																				xml:space="preserve">
-																				<path d="M37.5,1C17.3,1,1,17.3,1,37.5S17.3,74,37.5,74S74,57.7,74,37.5S57.6,1,37.5,1z M30.5,50.5v-26l20,13L30.5,50.5z" />
-																			</svg>
-																		</span>
-																	</a>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div
-														class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12">
+													<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12">
 														<div class="vc_column-inner">
 															<div class="wpb_wrapper">
 																<div
@@ -1654,8 +1652,7 @@
 																		data-680="24% 0% 0 0%">
 																		<div class="mkdf-eh-item-inner">
 																			<div class="mkdf-eh-item-content mkdf-eh-custom-1649"
-																				style="padding: 50px 2% 0 13%">
-
+																				style="padding: 50px 0% 0 13%">
 																				<div
 																					class="mkdf-section-title-holder  ">
 																					<div class="mkdf-st-inner">
@@ -1698,6 +1695,35 @@
 																			</div>
 																		</div>
 																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12">
+														<div class="vc_column-inner">
+															<div class="wpb_wrapper">
+																<div class="mkdf-video-button-holder  mkdf-vb-has-img">
+																	<div class="mkdf-video-button-image">
+																		<img width="1024" height="733"
+																			src="https://powerlift.qodeinteractive.com/wp-content/uploads/2019/06/h2-video-button.jpg"
+																			class="attachment-full size-full" alt="m"																			sizes="(max-width: 1024px) 100vw, 1024px"
+																			loading="eager" />
+																	</div>
+																	<a class="mkdf-video-button-play"
+																		style="color: #ffffff;font-size: 75px"
+																		href="https://vimeo.com/257366224?iframe=true"
+																		data-rel="prettyPhoto[video_button_pretty_photo_324]">
+																		<span class="mkdf-video-button-play-inner">
+																			<svg version="1.1" x="0px" y="0px"
+																				width="75px" height="75px"
+																				viewBox="0 0 75 75"
+																				style="enable-background:new 0 0 75 75;"
+																				xml:space="preserve">
+																				<path d="M37.5,1C17.3,1,1,17.3,1,37.5S17.3,74,37.5,74S74,57.7,74,37.5S57.6,1,37.5,1z M30.5,50.5v-26l20,13L30.5,50.5z" />
+																			</svg>
+																		</span>
+																	</a>
 																</div>
 															</div>
 														</div>
@@ -1756,7 +1782,7 @@
 																		data-680="24% 0% 0 0%">
 																		<div class="mkdf-eh-item-inner">
 																			<div class="mkdf-eh-item-content mkdf-eh-custom-1649"
-																				style="padding: 50px 2% 0 13%">
+																				style="padding: 50px 0% 0 13%">
 
 																				<div
 																					class="mkdf-section-title-holder  ">
@@ -1826,7 +1852,7 @@
 																		data-680="24% 0% 0 0%">
 																		<div class="mkdf-eh-item-inner">
 																			<div class="mkdf-eh-item-content mkdf-eh-custom-1649"
-																				style="padding: 50px 2% 0 13%">
+																				style="padding: 50px 0% 0 13%">
 
 																				<div
 																					class="mkdf-section-title-holder  ">
@@ -1957,7 +1983,7 @@
 																		data-680="24% 0% 0 0%">
 																		<div class="mkdf-eh-item-inner">
 																			<div class="mkdf-eh-item-content mkdf-eh-custom-1649"
-																				style="padding: 50px 2% 0 13%">
+																				style="padding: 50px 0% 0 13%">
 
 																				<div
 																					class="mkdf-section-title-holder  ">
@@ -2027,7 +2053,7 @@
 																		data-680="24% 0% 0 0%">
 																		<div class="mkdf-eh-item-inner">
 																			<div class="mkdf-eh-item-content mkdf-eh-custom-1649"
-																				style="padding: 50px 2% 0 13%">
+																				style="padding: 50px 0% 0 13%">
 
 																				<div
 																					class="mkdf-section-title-holder  ">
@@ -2157,7 +2183,7 @@
 																		data-680="24% 0% 0 0%">
 																		<div class="mkdf-eh-item-inner">
 																			<div class="mkdf-eh-item-content mkdf-eh-custom-1649"
-																				style="padding: 50px 2% 0 13%">
+																				style="padding: 50px 0% 0 13%">
 
 																				<div
 																					class="mkdf-section-title-holder  ">
