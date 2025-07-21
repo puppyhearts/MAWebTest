@@ -788,6 +788,63 @@
 	</svg>
 	<div class="mkdf-wrapper">
 		<div class="mkdf-wrapper-inner">
+			
+			<style>
+				html {
+				  scroll-behavior: smooth;
+				}
+			  
+				.nav-menu {
+				  display: flex;
+				  gap: 20px;
+				  position: fixed;
+				  top: 0;
+				  background: #000;
+				  width: 100%;
+				  padding: 10px;
+				  z-index: 1000;
+				}
+			  
+				.nav-link {
+				  color: white;
+				  text-decoration: none;
+				  padding-bottom: 4px;
+				  border-bottom: 2px solid transparent;
+				  transition: border-color 0.3s;
+				}
+			  
+				.nav-link.active {
+				  border-color: white;
+				}
+			  
+				section {
+				  min-height: 100vh;
+				  padding: 80px 20px 20px; /* leave space for fixed nav */
+				}
+			  </style>
+			  <script>
+				const sections = document.querySelectorAll("section");
+				const navLinks = document.querySelectorAll(".nav-link");
+			  
+				window.addEventListener("scroll", () => {
+				  let current = "";
+			  
+				  sections.forEach((section) => {
+					const sectionTop = section.offsetTop;
+					const sectionHeight = section.offsetHeight;
+					if (scrollY >= sectionTop - 100) {
+					  current = section.getAttribute("id");
+					}
+				  });
+			  
+				  navLinks.forEach((link) => {
+					link.classList.remove("active");
+					if (link.getAttribute("href") === "#" + current) {
+					  link.classList.add("active");
+					}
+				  });
+				});
+			  </script>
 
 			<aside class="mkdf-vertical-menu-area mkdf-vertical-alignment-top">
 				<div class="mkdf-vertical-menu-area-inner">
