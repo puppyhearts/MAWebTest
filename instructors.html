@@ -1662,7 +1662,11 @@
 																							Donec sagittis tempor ante
 																							in aliquet. </p>
 																					</div>
-																				</div> 
+																				</div>
+																				<div class="vc_empty_space"
+																					style="height: 38px"><span
+																						class="vc_empty_space_inner"></span>
+																				</div>
 																				<div
 																					class="mkdf-btn-outer-holder mkdf-btn-outer-solid mkdf-btn-outer-medium">
 																					<a itemprop="url"
@@ -1789,7 +1793,11 @@
 																							Donec sagittis tempor ante
 																							in aliquet. </p>
 																					</div>
-																				</div> 
+																				</div>
+																				<div class="vc_empty_space"
+																					style="height: 38px"><span
+																						class="vc_empty_space_inner"></span>
+																				</div>
 																				<div
 																					class="mkdf-btn-outer-holder mkdf-btn-outer-solid mkdf-btn-outer-medium">
 																					<a itemprop="url"
@@ -1855,7 +1863,11 @@
 																							Donec sagittis tempor ante
 																							in aliquet. </p>
 																					</div>
-																				</div> 
+																				</div>
+																				<div class="vc_empty_space"
+																					style="height: 38px"><span
+																						class="vc_empty_space_inner"></span>
+																				</div>
 																				<div
 																					class="mkdf-btn-outer-holder mkdf-btn-outer-solid mkdf-btn-outer-medium">
 																					<a itemprop="url"
@@ -1982,7 +1994,11 @@
 																							Donec sagittis tempor ante
 																							in aliquet. </p>
 																					</div>
-																				</div> 
+																				</div>
+																				<div class="vc_empty_space"
+																					style="height: 38px"><span
+																						class="vc_empty_space_inner"></span>
+																				</div>
 																				<div
 																					class="mkdf-btn-outer-holder mkdf-btn-outer-solid mkdf-btn-outer-medium">
 																					<a itemprop="url"
@@ -2048,7 +2064,11 @@
 																							Donec sagittis tempor ante
 																							in aliquet. </p>
 																					</div>
-																				</div> 
+																				</div>
+																				<div class="vc_empty_space"
+																					style="height: 38px"><span
+																						class="vc_empty_space_inner"></span>
+																				</div>
 																				<div
 																					class="mkdf-btn-outer-holder mkdf-btn-outer-solid mkdf-btn-outer-medium">
 																					<a itemprop="url"
@@ -2174,7 +2194,11 @@
 																							Donec sagittis tempor ante
 																							in aliquet. </p>
 																					</div>
-																				</div> 
+																				</div>
+																				<div class="vc_empty_space"
+																					style="height: 38px"><span
+																						class="vc_empty_space_inner"></span>
+																				</div>
 																				<div
 																					class="mkdf-btn-outer-holder mkdf-btn-outer-solid mkdf-btn-outer-medium">
 																					<a itemprop="url"
@@ -2841,6 +2865,55 @@
 	</script>
 </body>
 
-<!-- Mirrored from powerlift.qodeinteractive.com/trainer-home/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jul 2025 17:41:54 GMT -->
-
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  const navLinks = document.querySelectorAll(".mkdf-vertical-menu li a");
+	  const navItems = document.querySelectorAll(".mkdf-vertical-menu li");
+	  const sections = document.querySelectorAll("section, div[id]");
+	
+	  // Smooth scroll + activate on click
+	  navLinks.forEach((link) => {
+		link.addEventListener("click", function (e) {
+		  const href = this.getAttribute("href");
+		  if (href && href.startsWith("#")) {
+			e.preventDefault();
+	
+			const targetId = href.slice(1);
+			const targetEl = document.getElementById(targetId);
+			if (targetEl) {
+			  targetEl.scrollIntoView({ behavior: "smooth" });
+			  history.pushState(null, null, "#" + targetId);
+	
+			  // Clear and set active class
+			  navItems.forEach(item => item.classList.remove("mkdf-active-item"));
+			  this.closest("li").classList.add("mkdf-active-item");
+			}
+		  }
+		});
+	  });
+	
+	  // Scroll-based active class switching
+	  window.addEventListener("scroll", () => {
+		let currentId = "";
+	
+		sections.forEach((section) => {
+		  const rect = section.getBoundingClientRect();
+		  if (rect.top <= 150 && rect.bottom >= 150) {
+			currentId = section.getAttribute("id");
+		  }
+		});
+	
+		navItems.forEach((item) => {
+		  const link = item.querySelector("a");
+		  if (!link) return;
+		  const href = link.getAttribute("href");
+	
+		  item.classList.remove("mkdf-active-item");
+		  if (href === "#" + currentId) {
+			item.classList.add("mkdf-active-item");
+		  }
+		});
+	  });
+	});
+	</script>
 </html>
